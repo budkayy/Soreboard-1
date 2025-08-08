@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1 class="head-message">Welcome to the Game</h1>
+            </div>
+            <div class="container">
+                <div class="hg-container">
+                    <h3>HOME</h3>
+                    <p class="score-box-number" id="home-score-box"></p>
+                    <div class="score-btns">
+                        <button class="add-score-btn" id="score-guest-1" onclick="homeAddOne()">+1</button>
+                        <button class="add-score-btn" id="score-guest-2" onclick="homeAddTwo()">+2</button>
+                        <button class="add-score-btn" id="score-guest-3" onclick="homeAddThree()">+3</button>
+                    </div>
+
+                </div>
+                <div class="hg-container">
+                    <h3>GUEST</h3>
+                    <p class="score-box-number" id="guest-score-box"></p>
+                    <div class="score-btns">
+                        <button class="add-score-btn" id="score-guest-1" onclick="guestAddOne()">+1</button>
+                        <button class="add-score-btn" id="score-guest-2" onclick="guestAddTwo()">+2</button>
+                        <button class="add-score-btn" id="score-guest-3" onclick="guestAddThree()">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottm-nav">
+            <button id="reset-btn" onclick="reset()" > Reset Game</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
